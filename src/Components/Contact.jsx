@@ -189,7 +189,7 @@ function Contact() {
                 <h3 className="h3 card-title">Mail Here</h3>
 
                 <a
-                  href="mailto:disenthrall.solution@gmail.com"
+                  href="mailto:disenthrall.solutions@gmail.com"
                   className="card-link"
                 >
                   disenthrall.solutions@gmail.com

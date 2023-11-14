@@ -45,6 +45,9 @@ function Header() {
                 Get Started
               </a>
             </li>
+            <li>
+              <i class="fa-solid fa-bars"></i>
+            </li>
           </ul>
         </nav>
 
