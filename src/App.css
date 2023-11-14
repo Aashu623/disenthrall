@@ -326,7 +326,7 @@ body {
   left: 0;
 }
 .hide-navbar {
-  top: 1000%;
+  top: -1000%;
 }
 .show-navbar {
   top: 0;
