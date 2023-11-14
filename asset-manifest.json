@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/disenthrall/static/css/main.1ce42d44.css",
+    "main.js": "/disenthrall/static/js/main.095db8bb.js",
+    "static/media/IT_Company.gif": "/disenthrall/static/media/IT_Company.18bcba89d4290c3f7580.gif",
+    "static/media/cta-bg.jpg": "/disenthrall/static/media/cta-bg.0a2419dbb98eb3118431.jpg",
+    "static/media/project-1.jpg": "/disenthrall/static/media/project-1.46c1a2f5df4e94818467.jpg",
+    "static/media/project-2.jpg": "/disenthrall/static/media/project-2.20992fa99dfd44a3ce4c.jpg",
+    "static/media/project-6.jpg": "/disenthrall/static/media/project-6.4cd0d47506e685277d2d.jpg",
+    "static/media/project-5.jpg": "/disenthrall/static/media/project-5.06886619c065c72ac8ae.jpg",
+    "static/media/project-3.jpg": "/disenthrall/static/media/project-3.5781f3567347258c82dd.jpg",
+    "static/media/hero-banner.png": "/disenthrall/static/media/hero-banner.8b82a40687f2a0f6a513.png",
+    "static/media/project-4.jpg": "/disenthrall/static/media/project-4.49c96fd7933dd4e512fe.jpg",
+    "index.html": "/disenthrall/index.html",
+    "main.1ce42d44.css.map": "/disenthrall/static/css/main.1ce42d44.css.map",
+    "main.095db8bb.js.map": "/disenthrall/static/js/main.095db8bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ce42d44.css",
+    "static/js/main.095db8bb.js"
+  ]
+}
