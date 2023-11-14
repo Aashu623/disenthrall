@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [navbar, setNavbar] = useState("navbar hide-navbar");
+  const [isActive, setIsActive] = useState(true);
+
   return (
     <header className="header" data-header>
       <div className="container">
@@ -8,34 +11,54 @@ function Header() {
           Disenthrall
         </a>
 
-        <nav className="navbar container" data-navbar>
+        <nav className={navbar} data-navbar>
           <ul className="navbar-list">
             <li>
-              <a href="#home" className="navbar-link" data-nav-link>
+              <a
+                href="#home"
+                className="navbar-link"
+                data-nav-link
+              >
                 Home
               </a>
             </li>
 
             <li>
-              <a href="#service" className="navbar-link" data-nav-link>
+              <a
+                href="#service"
+                className="navbar-link"
+                data-nav-link
+              >
                 Services
               </a>
             </li>
 
             <li>
-              <a href="#project" className="navbar-link" data-nav-link>
+              <a
+                href="#project"
+                className="navbar-link"
+                data-nav-link
+              >
                 Project
               </a>
             </li>
 
             <li>
-              <a href="#about" className="navbar-link" data-nav-link>
+              <a
+                href="#about"
+                className="navbar-link"
+                data-nav-link
+              >
                 About Us
               </a>
             </li>
 
             <li>
-              <a href="#contact" className="navbar-link" data-nav-link>
+              <a
+                href="#contact"
+                className="navbar-link"
+                data-nav-link
+              >
                 Contact Us
               </a>
             </li>
@@ -45,9 +68,6 @@ function Header() {
                 Get Started
               </a>
             </li>
-            <li>
-              <i class="fa-solid fa-bars"></i>
-            </li>
           </ul>
         </nav>
 
@@ -56,8 +76,19 @@ function Header() {
           aria-label="Toggle menu"
           data-nav-toggler
         >
-          <ion-icon name="menu-outline" className="open"></ion-icon>
-          <ion-icon name="close-outline" className="close"></ion-icon>
+          {isActive ? (
+            <ion-icon
+              name="menu-outline"
+              className="open"
+              onClick={() => setIsActive(false)}
+            ></ion-icon>
+          ) : (
+            <ion-icon
+              name="close-outline"
+              className="close"
+              onClick={() => setIsActive(true)}
+            ></ion-icon>
+          )}
         </button>
       </div>
     </header>
