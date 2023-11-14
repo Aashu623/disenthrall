@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 
 function Header() {
-  const [navbar, setNavbar] = useState("navbar hide-navbar");
   const [isActive, setIsActive] = useState(true);
 
+  const handleMenuClick = () => {
+    setIsActive(false);
+  };
+  const handleCrossClick = () => {
+    setIsActive(true);
+  };
   return (
     <header className="header" data-header>
       <div className="container">
@@ -11,54 +16,34 @@ function Header() {
           Disenthrall
         </a>
 
-        <nav className={navbar} data-navbar>
+        <nav className="navbar hide-navbar" data-navbar>
           <ul className="navbar-list">
             <li>
-              <a
-                href="#home"
-                className="navbar-link"
-                data-nav-link
-              >
+              <a href="#home" className="navbar-link" data-nav-link>
                 Home
               </a>
             </li>
 
             <li>
-              <a
-                href="#service"
-                className="navbar-link"
-                data-nav-link
-              >
+              <a href="#service" className="navbar-link" data-nav-link>
                 Services
               </a>
             </li>
 
             <li>
-              <a
-                href="#project"
-                className="navbar-link"
-                data-nav-link
-              >
+              <a href="#project" className="navbar-link" data-nav-link>
                 Project
               </a>
             </li>
 
             <li>
-              <a
-                href="#about"
-                className="navbar-link"
-                data-nav-link
-              >
+              <a href="#about" className="navbar-link" data-nav-link>
                 About Us
               </a>
             </li>
 
             <li>
-              <a
-                href="#contact"
-                className="navbar-link"
-                data-nav-link
-              >
+              <a href="#contact" className="navbar-link" data-nav-link>
                 Contact Us
               </a>
             </li>
@@ -80,13 +65,13 @@ function Header() {
             <ion-icon
               name="menu-outline"
               className="open"
-              onClick={() => setIsActive(false)}
+              onClick={handleMenuClick}
             ></ion-icon>
           ) : (
             <ion-icon
               name="close-outline"
               className="close"
-              onClick={() => setIsActive(true)}
+              onClick={handleCrossClick}
             ></ion-icon>
           )}
         </button>
